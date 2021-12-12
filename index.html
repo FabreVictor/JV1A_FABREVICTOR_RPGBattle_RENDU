@@ -1,0 +1,127 @@
+<html>
+<style type="text/css">
+    .background {
+        background-color: #0076a6;
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    #container {
+        position: relative;
+    }
+    canvas {
+    }
+    
+    #monsterbox,
+    #charbox {
+       position: absolute;
+       left: 100px;
+       top: 100px;
+       background-color: green;
+       border: 2px solid #ccc;       
+       background-color: rgba(0,0,0,0);
+       margin:2px;
+       display: flex;
+       display: none;
+    }
+    .action:hover{
+        background: white;
+
+
+    #display-log {
+
+
+    }    
+
+    .listclean {
+        list-style:none;
+        margin-left:0;
+        padding-left:0;
+    }
+      
+</style>
+
+<head>
+    <title>RP</title>
+    <script type="module" src="./game.js" />
+    <script type="javascript">
+    </script>
+</head>
+
+<body class="background">
+
+    <div id="container">
+        <canvas id="canvas1" width="800" height="600">
+
+        </canvas>
+        
+        <div id="monsterbox">
+            <table>
+                <tr>
+                    <td><label>Name : </label></td>
+                    <td><label id="monstername">TEXT</label></td>
+  
+                </tr>
+                <tr>
+                    <td><label>HP : </label></td>
+                    <td><label id="health">TEXT</label></td>
+  
+                </tr>
+            </table>
+        </div>
+
+        <div id="charbox">
+            <!--<ul class="listclean">-->
+                <!--<li><label>Name : </label><label id='charname'>TEXT</label></li>-->
+                <!--<li><label>HP : </label><label id='health'>TEXT</label></li>-->
+                <!--<li><label>MA : </label><label id='mana'>TEXT</label></li>-->
+            <!--</ul>-->
+            <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td><label>Name : </label></td>
+                  <td><label id='charname'>TEXT</label></td>
+
+                </tr>
+                <tr>
+                  <td><label>HP : </label></td>
+                  <td><label id='health'>TEXT</label></td>
+
+                </tr>
+                <tr>
+                    <td><label>MA : </label></td>
+                    <td><label id='mana'>TEXT</label></td>
+
+                </tr>
+            </table>
+            <table id="action"> 
+                <tr>
+                <th>Actions:</th>
+                </tr>
+                <tr>
+                <td><label class="action"><a id="action-attack">Attack</a></label></td>
+                </tr>
+                <tr>
+                <td><label class="action"><a id="action-sort">Sort</a></label></td>
+                </tr>
+                <tr>
+                <td><label class="action"><a id="action-repos">Repos</a></label></td>
+                </tr>
+                <tr>
+                <td><label class="action"><a id="action-defence">Defence</a></label></td>
+                </tr>
+                <div></div>
+            </table>
+        </div>
+        <div id="display-log"></div>
+    </div>
+    <div class= "tableAction"></div>
+        
+</body>
+
+</html>
